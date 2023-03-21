@@ -1,3 +1,19 @@
+#Data Source Configurations
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: btiger
+#Jpa configuration
+  jpa:
+    properties:
+      hibernate:
+        fromat_sql: 'true'
+        dialect: org.hibernate.dialect.MariaDB102Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
 #Eureka client setup
 eureka:
   instance:
